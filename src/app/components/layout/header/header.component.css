@@ -1,0 +1,10 @@
+.header {
+  background-color: rgb(235, 235, 235);
+}
+
+.titulo {
+  background-color: darkred;
+  font-weight: bold;
+  color: beige;
+  font-size: 25px;
+}
