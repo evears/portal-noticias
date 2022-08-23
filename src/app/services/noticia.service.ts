@@ -11,11 +11,11 @@ export class NoticiaService {
 
   getNoticias(parametros: any): Observable<any> {
     console.log(parametros.pais);
-    const URL = 'https://newsapi.org/v2/top-headlines?country='
+    const URL = 'https://gnews.io/api/v4/top-headlines?country='
       + parametros.pais
-      + '&category='
+      + '&topic='
       + parametros.categoria +
-      '&apiKey=f0b1b31a4990475c9ac5629cbccd3110';
+      '&token=6dc5307775429324db7c155cd9e2095f';
 
     return this.http.get(URL);
   }

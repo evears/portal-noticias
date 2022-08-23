@@ -9,11 +9,13 @@ export class NavbarComponent implements OnInit {
 
   @Output() parametrosSeleccionados = new EventEmitter<any>()
 
-  categoriaSeleccionada = 'general';
-  paisSeleccionado = 'ar';
+  categoriaSeleccionada = 'breaking-news';
+  paisSeleccionado = 'us';
 
   categorias: any[] = [
-    { value: 'general', nombre: 'General' },
+    { value: 'breaking-news', nombre: 'Último Momento' },
+    { value: 'world', nombre: 'Internacionales' },
+    { value: 'nation', nombre: 'Nacionales' },
     { value: 'business', nombre: 'Negocios' },
     { value: 'entertainment', nombre: 'Entretenimiento' },
     { value: 'health', nombre: 'Salud' },
@@ -22,13 +24,23 @@ export class NavbarComponent implements OnInit {
     { value: 'technology', nombre: 'Tecnología' },
   ]
 
+
+  /*categorias: any[] = [
+    { value: 'general', nombre: 'General' },
+    { value: 'business', nombre: 'Negocios' },
+    { value: 'entertainment', nombre: 'Entretenimiento' },
+    { value: 'health', nombre: 'Salud' },
+    { value: 'science', nombre: 'Ciencia' },
+    { value: 'sports', nombre: 'Deportes' },
+    { value: 'technology', nombre: 'Tecnología' },
+  ] */
+
   paises: any[] = [
-    { value: 'ar', nombre: 'Argentina' },
     { value: 'us', nombre: 'Estados Unidos' },
     { value: 'br', nombre: 'Brasil' },
     { value: 'de', nombre: 'Alemania' },
     { value: 'cn', nombre: 'China' },
-    { value: 'mx', nombre: 'México' },
+    { value: 'pe', nombre: 'Perú' },
   ]
 
   constructor() { }
