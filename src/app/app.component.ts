@@ -13,7 +13,14 @@ export class AppComponent {
   loading = false;
 
   constructor(private noticiaService: NoticiaService) {
+  }
 
+  ngOnInit(): void {
+    const defecto = {
+      categoria: "breaking-news",
+      pais: "us",
+    }
+    this.buscarNoticias(defecto)
   }
 
   buscarNoticias(parametros: any) {
@@ -32,5 +39,7 @@ export class AppComponent {
     }, 1000);
 
   }
+
+
 
 }

@@ -24,17 +24,6 @@ export class NavbarComponent implements OnInit {
     { value: 'technology', nombre: 'Tecnología' },
   ]
 
-
-  /*categorias: any[] = [
-    { value: 'general', nombre: 'General' },
-    { value: 'business', nombre: 'Negocios' },
-    { value: 'entertainment', nombre: 'Entretenimiento' },
-    { value: 'health', nombre: 'Salud' },
-    { value: 'science', nombre: 'Ciencia' },
-    { value: 'sports', nombre: 'Deportes' },
-    { value: 'technology', nombre: 'Tecnología' },
-  ] */
-
   paises: any[] = [
     { value: 'us', nombre: 'Estados Unidos' },
     { value: 'br', nombre: 'Brasil' },
