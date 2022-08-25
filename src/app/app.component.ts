@@ -7,7 +7,7 @@ import { NoticiaService } from './services/noticia.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'newspaper';
+  title = 'TEC News';
 
   listNoticias: any[] = [];
 
