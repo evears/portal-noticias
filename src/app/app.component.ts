@@ -10,7 +10,6 @@ export class AppComponent {
   title = 'newspaper';
 
   listNoticias: any[] = [];
-  loading = false;
 
   constructor(private noticiaService: NoticiaService) {
   }
@@ -24,22 +23,13 @@ export class AppComponent {
   }
 
   buscarNoticias(parametros: any) {
-    this.loading = true;
     this.listNoticias = [];
-
-    setTimeout(() => {
-      this.noticiaService.getNoticias(parametros).subscribe(data => {
-        this.loading = false;
-        this.listNoticias = data.articles;
-        console.log(this.listNoticias)
-      }, error => {
-        console.log(error);
-        this.loading = false;
-      })
-    }, 1000);
-
+    this.noticiaService.getNoticias(parametros).subscribe(data => {
+      this.listNoticias = data.articles;
+      console.log(this.listNoticias)
+    }, error => {
+      console.log(error);
+    })
   }
-
-
 
 }
