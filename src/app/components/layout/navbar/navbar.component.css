@@ -1,3 +1,18 @@
 .nav-item {
   font-weight: bold;
 }
+
+button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(150, 27, 27);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(150, 27, 27);
+  font-weight: bold;
+  border: 2px solid black;
+}

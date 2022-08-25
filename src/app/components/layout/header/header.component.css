@@ -3,8 +3,8 @@
 }
 
 .titulo {
-  background-color: darkred;
+  background-color: rgb(150, 27, 27);
   font-weight: bold;
-  color: beige;
+  color: rgb(255, 255, 255);
   font-size: 25px;
 }
